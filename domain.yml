@@ -1,0 +1,80 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- affirm
+- individual
+- tax_help
+- goodbye
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- 1040_form
+- w7_form
+- 941_form
+- out_of_scope
+- employer
+responses:
+  utter_1041_form:
+  - text: The form you are looking for to get you started is 1041.
+  utter_941_form:
+  - text: 941 is the form you're looking for.
+  utter_ask_individual_type:
+  - buttons:
+    - payload: Myself
+      title: Myself
+    - payload: Someone else
+      title: Someone else
+    text: Are you filing for yourself or for someone else?
+  utter_ask_social_security:
+  - buttons:
+    - payload: yes
+      title: yes
+    - payload: no
+      title: no
+    text: Do you have a social security number?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - buttons:
+    - payload: yes
+      title: yes
+    - payload: no
+      title: no
+    text: Did that help you?
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - text: Hey! How are you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_tax_identity:
+  - buttions:
+    - payload: Individual
+      title: Individual
+    - payload: Employer
+      title: Employer
+    text: Are you an individual taxpayer or an employer?
+  utter_w7_form:
+  - text: W-7 is the form that will get you started given your situation.
+actions:
+- action_employer
+- action_individual
+- out_of_scope
+- utter_1041_form
+- utter_941_form
+- utter_ask_individual_type
+- utter_ask_social_security
+- utter_cheer_up
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_iamabot
+- utter_tax_identity
+- utter_w7_form
