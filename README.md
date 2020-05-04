@@ -6,4 +6,4 @@
 #### For the app to work, you will need to have Rasa and Flask installed. Before running Rasa, make sure that you have a trained model based on configurations already in the code. Please see Rasa to get started here: https://rasa.com/docs/getting-started/
 
 
-[Chatbot panel prototype based on Rasa-Webchat base front-end design](./Chatbot-panel.png)
+![Chatbot panel prototype based on Rasa-Webchat base front-end design](./Chatbot-panel.png)
