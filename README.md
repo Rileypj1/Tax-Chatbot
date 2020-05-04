@@ -8,3 +8,6 @@
 This project's front-end design seen below uses Rasa-Webchat, an open source front-end design for chatbox panels in association with Rasa. 
 
 ![Chatbot panel prototype based on Rasa-Webchat base front-end design](./Chatbot-panel.png)
+
+
+[![DOI](https://zenodo.org/badge/260548189.svg)](https://zenodo.org/badge/latestdoi/260548189)
